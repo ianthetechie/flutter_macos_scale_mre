@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
               _rotation = _lastRotation + details.rotation;
             });
 
-            final currentRotation = details.rotation * (180.0 / pi);
+            final currentRotation = _rotation * (180.0 / pi);
             if (kDebugMode) {
               print("Current rotation in degrees: $currentRotation");
             }
